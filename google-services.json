@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "913974419645",
+    "project_id": "flfire1demo",
+    "storage_bucket": "flfire1demo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:913974419645:android:39cbaf80145d0e9f6c57d4",
+        "android_client_info": {
+          "package_name": "my.app.a1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZ-rdY5BBZ83_v8qGtXa37PeFmxPy35ok"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
