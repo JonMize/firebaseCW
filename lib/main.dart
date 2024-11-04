@@ -12,20 +12,20 @@ void main() async {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Inventory',
+      title: 'Test',
       home: HomePage(),
     );
   }
 }
 
 class HomePage extends StatefulWidget {
-  const HomePage({Key? key}) : super(key: key);
+  const HomePage({super.key});
 
   @override
   State<HomePage> createState() => _HomePageState();
@@ -74,9 +74,9 @@ class _HomePageState extends State<HomePage> {
               ElevatedButton(
                 child: Text(action == 'create' ? 'Create' : 'Update'),
                 onPressed: () async {
-                  final String? name = _nameController.text;
+                  final String name = _nameController.text;
                   final double? price = double.tryParse(_priceController.text);
-                  if (name != null && price != null) {
+                  if (price != null) {
                     if (action == 'create') {
                       await _products.add({"name": name, "price": price});
                     }
